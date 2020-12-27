@@ -7,8 +7,22 @@
     {
       "type": "electron",
       "request": "launch",
-      "name": "Launch Electron against the workspace",
+      "name": "Patchboot Electron default abb",
       "appDir": "${workspaceFolder}"
+    },
+    {
+      "type": "electron",
+      "request": "launch",
+      "name": "Patchboot Electron ssb app",
+      "appDir": "${workspaceFolder}",
+      "env": {"ssb_appname": "ssb"}
+    },
+    {
+      "type": "electron",
+      "request": "launch",
+      "name": "Patchboot Electron ssb-test app",
+      "appDir": "${workspaceFolder}",
+      "env": {"ssb_appname": "ssb-test"}
     }
   ]
 }
