@@ -1,5 +1,5 @@
 {
-  "name": "patchboot",
+  "name": "patchboot-electron",
   "version": "0.0.1",
   "description": "A Scuttlebutt bootloader",
   "main": "main.js",
