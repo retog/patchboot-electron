@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron .",
     "generate-png": "convert-svg-to-png img/shelve.svg --width 64px ",
+    "postinstall": "cpy node_modules/scuttle-shell-browser-consumer/site/ssb-connect.js ./ --rename=scuttle-shell-browser-consumer.js",
     "package": "electron-packager --all --overwrite .",
     "deploy": "sudo cp -R patchboot-linux-x64/* /usr/local/lib/patchboot",
     "test-server": "ssb_appname=ssb-test ssb-server start"
@@ -20,13 +21,13 @@
   "license": "MIT",
   "devDependencies": {
     "convert-svg-to-png": "^0.5.0",
+    "cpy-cli": "^3.1.1",
     "electron": "^9.2.0",
     "electron-packager": "^15.0.0"
   },
   "dependencies": {
-    "prismjs": "^1.21.0",
-    "pull-paramap": "^1.2.2",
-    "ssb-client": "^4.9.0",
-    "ssb-ref": "^2.14.0"
+    "patchboot": "^1.1.0",
+    "scuttle-shell-browser-consumer": "^1.1.4",
+    "ssb-client": "^4.9.0"
   }
 }

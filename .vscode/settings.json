@@ -3,6 +3,5 @@
   // The following will hide the js and map files in the editor
   "files.exclude": {
       "patchboot-*-*": true,
-      "node_modules": true
   }
 }
